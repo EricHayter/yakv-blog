@@ -1,0 +1,54 @@
+// Techno theme - deep black minimal dark aesthetic
+// Deeper blacks with softer contrast for comfortable viewing
+
+$body-background-color: #000000;
+$sidebar-color: #000000;
+$code-background-color: #080808;
+$border-color: #1a1a1a;
+
+// Content colors - softer whites/grays for reduced eye strain
+$body-text-color: #c0c0c0;
+$body-heading-color: #e8e8e8;
+$link-color: #6b9bd1;
+$link-hover-color: #8bb4e0;
+$nav-child-link-color: #999999;
+$search-result-preview-color: #888888;
+
+// Navigation
+$nav-list-link-color: #a0a0a0;
+$nav-list-link-active-color: #e8e8e8;
+
+// Code blocks
+$code-color: #c0c0c0;
+$code-linenumber-color: #444444;
+
+// Table colors
+$table-background-color: #000000;
+$thead-background-color: #080808;
+$th-border-color: #1a1a1a;
+$td-border-color: #1a1a1a;
+
+// Button colors - $btn-primary-color is the background color
+$btn-primary-color: #e8e8e8;
+
+// Base button color for secondary buttons
+$base-button-color: #1a1a1a;
+
+// Search
+$search-background-color: #080808;
+$search-result-preview-background-color: #000000;
+
+// Borders - subtle for minimal aesthetic
+$border: 1px solid;
+$border-radius: 2px;
+
+// Feedback color for active navigation - visible but subtle gray
+$feedback-color: #2a2a2a;
+$label-green: #5cb85c;
+$label-blue: #6b9bd1;
+$label-purple: #b8a6e8;
+$label-yellow: #d4a136;
+$label-red: #d66b6b;
+
+// Import accessible dark syntax highlighting
+@import "./vendor/accessible-pygments/github-dark";

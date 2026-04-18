@@ -1,0 +1,306 @@
+// Techno Theme - Minimal, Modern Aesthetic
+// Custom typography and styling for a technical, clean look
+// Using Geist Mono font stack matching Hacktron aesthetic
+
+// Import Geist Mono from Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500;600;700&display=swap');
+
+// Typography overrides - Geist Mono for everything
+$body-font-family: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+$mono-font-family: 'Geist Mono', ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace;
+
+// Set smaller base font size
+html {
+  font-size: 14px;
+}
+
+// Body text
+body {
+  font-family: $body-font-family;
+  font-weight: 400;
+  font-size: 0.875rem; // ~14px at 16px base, ~12.25px at 14px base
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Headings with monospace for techno aesthetic
+h1, h2, h3, h4, h5, h6,
+.site-title,
+.site-nav .nav-list-link {
+  font-family: $mono-font-family;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+// Paragraphs explicitly use the same monospace stack
+p {
+  font-family: $body-font-family;
+}
+
+// Enhanced borders for elements - inspired by Hacktron
+.main-content {
+  border-left: 1px solid $border-color;
+}
+
+.site-header {
+  border-bottom: 1px solid $border-color;
+}
+
+.site-footer {
+  border-top: 1px solid $border-color;
+}
+
+// Add borders to navigation items
+.site-nav {
+  border-right: 1px solid $border-color;
+
+  .nav-list-item {
+    border-bottom: 1px solid rgba($border-color, 0.3);
+
+    &:hover {
+      border-bottom-color: $border-color;
+    }
+  }
+}
+
+// Code blocks with minimal borders
+pre,
+code {
+  font-family: $mono-font-family;
+  border: 1px solid $border-color;
+}
+
+pre {
+  padding: 1rem;
+  border-radius: $border-radius;
+}
+
+// Inline code
+code:not(.hljs) {
+  padding: 0.125em 0.375em;
+  border-radius: $border-radius;
+}
+
+// Tables with clean borders
+table {
+  border: 1px solid $border-color;
+
+  th,
+  td {
+    border: 1px solid $border-color;
+  }
+}
+
+// Search with border
+.search-input-wrap {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+
+  &:focus-within {
+    border-color: $link-color;
+  }
+}
+
+// Buttons with techno styling
+.btn {
+  font-family: $mono-font-family;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: $link-color;
+    transform: translateY(-1px);
+  }
+}
+
+// Primary button override for high contrast
+.btn-primary {
+  color: #000000 !important;
+  background-color: #e8e8e8 !important;
+  background-image: none !important;
+
+  &:hover,
+  &.zeroclipboard-is-hover {
+    color: #000000 !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+  }
+
+  &:active,
+  &.selected,
+  &.zeroclipboard-is-active {
+    color: #000000 !important;
+    background-color: #d0d0d0 !important;
+    background-image: none !important;
+  }
+}
+
+// Navigation items - solid colors, no gradients
+.site-nav {
+  // Remove gradients from all navigation links
+  .nav-list-link {
+    &:hover,
+    &.active {
+      background-image: none !important;
+      background-color: #2a2a2a !important;
+    }
+  }
+
+  // Remove gradients from expander buttons
+  .nav-list-expander {
+    &:hover {
+      background-image: none !important;
+      background-color: #2a2a2a !important;
+    }
+  }
+
+  // All nav list items
+  .nav-list-item {
+    > a {
+      &:hover,
+      &.active {
+        background-image: none !important;
+        background-color: #2a2a2a !important;
+      }
+    }
+  }
+}
+
+// Fix all potential visibility issues
+// Ensure all buttons have proper contrast
+.btn-outline {
+  color: #a0a0a0 !important;
+  box-shadow: inset 0 0 0 2px #3a3a3a !important;
+
+  &:hover {
+    color: #c0c0c0 !important;
+    box-shadow: inset 0 0 0 3px #4a4a4a !important;
+  }
+}
+
+// Secondary buttons
+.btn:not(.btn-primary):not(.btn-outline) {
+  color: #a0a0a0 !important;
+  background-color: #1a1a1a !important;
+
+  &:hover {
+    color: #c0c0c0 !important;
+    background-color: #2a2a2a !important;
+  }
+}
+
+// Ensure search input is visible
+.search-input {
+  background-color: #0a0a0a !important;
+  border: 1px solid #2a2a2a !important;
+  color: #c0c0c0 !important;
+
+  &:focus {
+    border-color: #4a4a4a !important;
+  }
+
+  &::placeholder {
+    color: #666666 !important;
+  }
+}
+
+// Code blocks
+pre code,
+code {
+  background-color: #0a0a0a !important;
+  border-color: #2a2a2a !important;
+  color: #c0c0c0 !important;
+}
+
+// Tables
+table {
+  th, td {
+    border-color: #2a2a2a !important;
+  }
+
+  thead {
+    background-color: #0a0a0a !important;
+  }
+}
+
+// Callouts/warnings - ensure they're visible
+.warning {
+  background-color: #1a0f00 !important;
+  border-color: #d4a136 !important;
+
+  &::before {
+    color: #d4a136 !important;
+  }
+}
+
+.note {
+  background-color: #0a0f1a !important;
+  border-color: #6b9bd1 !important;
+
+  &::before {
+    color: #6b9bd1 !important;
+  }
+}
+
+// Callouts/Alerts with borders
+.label,
+[class*="label-"] {
+  font-family: $mono-font-family;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 1px solid currentColor;
+  border-radius: $border-radius;
+}
+
+// Minimal scroll bars (webkit browsers)
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $body-background-color;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $border-color;
+  border-radius: $border-radius;
+
+  &:hover {
+    background: lighten($border-color, 10%);
+  }
+}
+
+// Links with subtle underline
+a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-bottom-color: currentColor;
+  }
+}
+
+// Navigation links exception
+.site-nav a,
+.site-header a {
+  border-bottom: none;
+}
+
+// Reduced motion for accessibility
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
