@@ -15,9 +15,9 @@
 # in the templates via {{ site.myvariable }}.
 title: YAKV
 description: Yet Another Key-Value store blog and documentation
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-repository: "" # for github-metadata
+baseurl: "/yakv-blog" # the subpath of your site, e.g. /blog
+url: "https://erichayter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+repository: "EricHayter/yakv-blog" # for github-metadata
 
 permalink: pretty
 
