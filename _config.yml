@@ -13,13 +13,15 @@
 # you will see them accessed via {{ site.title }}, {{ site.github_repo }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Techno Blog
-description: A minimal, modern Jekyll theme for technical blogs and documentation
+title: YAKV
+description: Yet Another Key-Value store blog and documentation
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 repository: "" # for github-metadata
 
 permalink: pretty
+
+theme: just-the-docs
 
 defaults:
   - scope:
@@ -112,9 +114,9 @@ mermaid:
 heading_anchors: true
 
 # Aux links for the upper right navigation
-aux_links:
-  "GitHub":
-    - "#"
+# aux_links:
+#   "GitHub":
+#     - "https://github.com/yourusername/yakv"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: true
@@ -146,7 +148,7 @@ liquid:
 back_to_top: true
 back_to_top_text: "Back to top"
 
-footer_content: 'Built with the Techno theme - A fork of <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>. Distributed by an <a href="/LICENSE.txt">MIT license.</a>'
+footer_content: 'Documentation for YAKV. Built with <a href="https://github.com/just-the-docs/just-the-docs">Just the Docs</a>. Distributed by an <a href="/LICENSE.txt">MIT license.</a>'
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
