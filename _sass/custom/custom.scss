@@ -304,3 +304,13 @@ a {
     transition-duration: 0.01ms !important;
   }
 }
+
+// Images - prevent cropping and allow full width
+.main-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem 0;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+}
